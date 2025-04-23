@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Barber Shop Littler Hair</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #0e0e0e;
+      color: #eaeaea;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    header {
+      background: #000;
+      padding: 30px 20px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-size: 3.5em;
+      color: #d4af37;
+      font-weight: bold;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: #eaeaea;
+      margin: 0 25px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #d4af37;
+    }
+
+    .home-section {
+      position: relative;
+      background: url('https://via.placeholder.com/1500x800/333/fff?text=Barber+Shop+Littler+Hair') center center no-repeat;
+      background-size: cover;
+      height: 100vh;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .home-section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    .home-section p {
+      font-size: 1.25em;
+      max-width: 600px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+
+    .btn-home {
+      display: inline-block;
+      padding: 15px 25px;
+      background-color: #d4af37;
+      color: #333;
+      font-size: 1.2em;
+      text-decoration: none;
+      border-radius: 50px;
+      transition: background-color 0.3s;
+    }
+
+    .btn-home:hover {
+      background-color: #e63946;
+    }
+
+    section {
+      padding: 50px 60px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #d4af37;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #d4af37;
+      display: inline-block;
+      font-size: 1.8em;
+    }
+
+    .produtos, .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .produto, .foto {
+      background: #1e1e1e;
+      padding: 15px;
+      border-radius: 8px;
+      flex: 1 1 250px;
+      transition: transform 0.3s ease;
+    }
+
+    .produto:hover, .foto:hover {
+      transform: scale(1.05);
+    }
+
+    .produto img, .foto img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .produto h3 {
+      margin-top: 10px;
+      color: #fff;
+    }
+
+    .produto p {
+      color: #d4af37;
+      font-weight: bold;
+    }
+
+    .contato a {
+      display: inline-block;
+      color: #d4af37;
+      margin-top: 10px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contato a:hover {
+      color: #ffffff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #1a1a1a;
+      color: #999;
+      border-top: 2px solid #d4af37;
+    }
+
+    /* Botão flutuante Instagram */
+    .float-btn {
+      position: fixed;
+      width: 48px;
+      height: 48px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #C13584;
+      border-radius: 50%;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s;
+    }
+
+    .float-btn:hover {
+      transform: scale(1.1);
+    }
+
+    .float-btn img {
+      width: 24px;
+      height: 24px;
+    }
+
+    /* Responsivo */
+    @media (max-width: 768px) {
+      .produtos, .galeria {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Barber Shop Littler Hair</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#loja">Loja</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section class="home-section" id="home">
+    <div data-aos="fade-up">
+      <h2>Bem-vindo à Barber Shop Littler Hair</h2>
+      <p>Transformamos seu visual com cortes modernos e exclusivos. Além disso, você encontra uma loja cheia de estilo e elegância.</p>
+      <a href="#sobre" class="btn-home">Saiba Mais</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="sobre" data-aos="fade-up">
+    <h2>Sobre Nós</h2>
+    <p>Aqui na Barbearia Littler Hair você encontra mais do que um corte. É um estilo de vida. Cabelo na régua, barba alinhada e o drip no ponto com nossa linha de roupas masculinas exclusivas.</p>
+  </section>
+
+  <!-- Serviços Section -->
+  <section id="servicos" data-aos="fade-right">
+    <h2>Serviços</h2>
+    <ul>
+      <li>Corte degradê / social</li>
+      <li>Barba com toalha quente</li>
+      <li>Design de sobrancelha</li>
+      <li>Pacote completo: corte + barba + tratamento</li>
+    </ul>
+  </section>
+
+  <!-- Produtos Section -->
+  <section id="loja" data-aos="zoom-in-up">
+    <h2>Loja Masculina</h2>
+    <div class="produtos">
+      <div class="produto" data-aos="flip-left">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIvBaf8DDOycCAxagAPQUArls2OLLfBZnaIQ&s" alt="Boné estiloso">
+        <h3>Boné Snapback</h3>
+        <p>R$ 59,90</p>
+      </div>
+      <div class="produto" data-aos="flip-left" data-aos-delay="100">
+        <img src="https://www.queroumnegocio.com.br/uploads/img/usuarios/44273/anuncios/23516/anuncios_fotos/a9a84f563be530778514528ea99708ca.jpeg" alt="Camiseta">
+        <h3>Camisetas</h3>
+        <p>R$ 79,90</p>
+      </div>
+      <div class="produto" data-aos="flip-left" data-aos-delay="200">
+        <img src="https://a-static.mlcdn.com.br/1500x1500/kit-3-bermudas-jeans-masculina-infantil-meninos-com-lycra-tam-10-a-16-anos-jr-kids/gababystore/3561a03cb92111eca4894201ac18506b/8c265fa3bb4a9345e4b5de36fbac372c.jpeg" alt="Shorts">
+        <h3>Shorts Jeans</h3>
+        <p>R$ 69,90</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato Section -->
+  <section id="contato" class="contato" data-aos="fade-up">
+    <h2>Contato</h2>
+    <p>📍 Av: Luiz Ribeiro, N° 305 - Pontal Norte.</p>
+    <p>⏰ Seg a Sáb: 10h às 20h</p>
+    <a href="https://www.instagram.com/barber_shop_littler_hair01?igsh=c2VsNWh5ZDZzNGIw" target="_blank">📸 Instagram</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Barber Shop Littler Hair. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Instagram Button -->
+  <!-- Instagram Button -->
+<a href="https://www.instagram.com/barber_shop_littler_hair01?igsh=c2VsNWh5ZDZzNGIw" class="float-btn" target="_blank">
+  <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
+</a>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
+</body>
+</html>
